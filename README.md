@@ -1,4 +1,4 @@
-# **NutriAid – AI-Powered Meal Recommendations for Students** 🍽️🤖  
+# **SmartBite – AI-Powered Meal Recommendations for Students in CUSTECH** 🍽️🤖  
 
 **NutriAid** is a machine learning-based meal recommendation system designed to help students choose the best meals based on their **dietary needs and health conditions**. Whether a student is recovering from an illness or following a specific diet, NutriAid provides **personalized meal suggestions** through an intuitive online food ordering platform.  
 
