@@ -1,47 +1,79 @@
-import Link from "next/link";
-import ProductGrid from "@/components/ui/product-grid";
-import { FeaturedProducts } from "@/components/ui/featured-products";
-import { HeroSection } from "@/components/ui/hero-section";
-import { CategoryList } from "@/components/ui/category-list";
+// Import dependencies
+import LandingHeader from "@/components/ui/landingHeader";
+import { Star } from "lucide-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex-1">
-      <HeroSection />
-      <div className="container px-4 md:px-6 py-8">
-        <section>
-          <div className="flex items-center justify-between mb-2">
-            <h2 className="text-3xl font-bold tracking-tight">
-              Find by Category
-            </h2>
-            <Link href="/products" className="text-primary hover:underline">
-              View all
-            </Link>
-          </div>
-        </section>
-        <CategoryList limit={2} />
+    <main className="min-h-screen bg-[url('/student.jpg')] bg-cover bg-center bg-no-repeat">
+      {/* Landing Header */}
+      <LandingHeader />
 
-        <section className="py-12">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">
-              Featured Workers
-            </h2>
-            <Link href="/products" className="text-primary hover:underline">
-              View all
-            </Link>
+      {/* Hero Section */}
+      <div className="container px-4 md:px-6 flex flex-col">
+        <div className="relative h-screen w-full flex flex-col justify-start items-start text-white">
+          {/* Hero Text */}
+          <div className="absolute top-20 left-6 md:left-12 text-left max-w-2xl">
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+              Healthy & Delicious <br />
+              Meals at Your{" "}
+              <span className="text-yellow-400">School Canteen</span>
+            </h1>
+            <p className="mt-4 text-lg md:text-xl font-medium text-gray-200">
+              <span className="font-bold text-white">SmartBite</span> helps
+              students find the best meals based on their dietary needs. Get
+              personalized recommendations for a healthier lifestyle!
+            </p>
+            <button className="mt-6 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg shadow-lg cursor-pointer">
+              Explore Meals
+            </button>
           </div>
-          <FeaturedProducts />
-        </section>
-        <section className="py-12">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-bold tracking-tight">New Workers</h2>
-            <Link href="/products" className="text-primary hover:underline">
-              View all
-            </Link>
+
+          {/* Food Cards Section */}
+          <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex gap-6">
+            <FoodCard />
+            <FoodCard />
           </div>
-          <ProductGrid category="new" />
-        </section>
+        </div>
       </div>
     </main>
+  );
+}
+
+// Food Card Component
+function FoodCard() {
+  return (
+    <div className="border rounded-2xl w-[280px] flex items-center p-3 gap-3 bg-white shadow-lg">
+      {/* Image */}
+      <div className="w-16 h-16">
+        <Image
+          src="/beauty.svg"
+          alt="a placeholder"
+          height={64}
+          width={64}
+          className="rounded-full object-cover"
+        />
+      </div>
+
+      {/* Details */}
+      <div className="flex flex-col flex-1">
+        {/* Price & Rating */}
+        <div className="flex items-center justify-between text-sm font-semibold text-gray-700">
+          <span>N2000</span>
+          <div className="flex items-center gap-1">
+            <Star size={14} className="text-yellow-500" />
+            <span className="text-xs">4.0</span>
+          </div>
+        </div>
+
+        {/* Food Name */}
+        <div className="text-base font-bold text-gray-800">Rice and Beans</div>
+
+        {/* Order Button */}
+        <button className="cursor-pointer mt-1 bg-yellow-400 text-black text-xs font-semibold px-3 py-1 rounded-full shadow-sm">
+          Order Now
+        </button>
+      </div>
+    </div>
   );
 }
