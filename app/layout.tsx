@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/components/ui/cart-provider";
-import LandingHeader from "@/components/ui/landingHeader";
+//import LandingHeader from "@/components/ui/landingHeader";
 //import Header from "@/components/ui/header";
-import Auth from "./authComponent/page";
+//import Auth from "./authComponent/page";
 //import Header from "@/components/ui/header";
 //import Footer from "@/components/ui/footer";
 
@@ -28,16 +28,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const isUserLogged = false;
+  
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
-          <div className="flex min-h-screen flex-col bg-[url('/student.jpg')] bg-cover bg-center bg-no-repeat">
+          <div className="flex min-h-screen flex-col">
             {/* <Header /> */}
-            {isUserLogged ? <LandingHeader /> :<Auth />}
+             {/* <Auth /> */}
             {children}
             {/* <Footer /> */}
           </div>

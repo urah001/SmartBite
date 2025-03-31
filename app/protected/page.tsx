@@ -1,13 +1,16 @@
 import Link from "next/link";
 import ProductGrid from "@/components/ui/product-grid";
 import { FeaturedProducts } from "@/components/ui/featured-products";
-import { HeroSection } from "@/components/ui/hero-section";
+//import { HeroSection } from "@/components/ui/hero-section";
 import { CategoryList } from "@/components/ui/category-list";
+import LandingHeader from "@/components/ui/landingHeader";
 
 export default function Home() {
+  
   return (
     <main className="flex-1">
-      <HeroSection />
+      <LandingHeader/>
+      {/* <HeroSection /> */}
       <div className="container px-4 md:px-6 py-8">
         <section>
           <div className="flex items-center justify-between mb-2">

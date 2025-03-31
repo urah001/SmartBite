@@ -7,7 +7,7 @@ import React from "react";
 const LandingHeader = () => {
   const pathname = usePathname();
   const routes = [
-    { href: "/", label: "Home" },
+    { href: "/protected", label: "Home" },
     { href: "/products", label: "Smart Bite" },
     { href: "/categories", label: "Bites Categories" },
     { href: "/about", label: "About" },

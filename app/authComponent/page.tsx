@@ -6,7 +6,7 @@ const Auth = () => {
   return (
     <header className="flex-row sticky justify-end">
       <Button asChild className="ml-4">
-        <Link href={"/login"}>login</Link>
+        <Link href={"/protected"}>login</Link>
       </Button>
       <Button asChild className="ml-4">
         <Link href={"/signup"}>signup</Link>

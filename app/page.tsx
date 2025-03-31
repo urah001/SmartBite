@@ -4,9 +4,8 @@ import { Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
-  
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen bg-[url('/student.jpg')] bg-cover bg-center bg-no-repeat">
       {/* Landing Header */}
 
       {/* Hero Section */}

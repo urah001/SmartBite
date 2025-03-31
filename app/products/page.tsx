@@ -2,10 +2,12 @@
 import { Suspense } from "react";
 import ProductGrid from "@/components/ui/product-grid";
 import { Button } from "@/components/ui/button";
+import LandingHeader from "@/components/ui/landingHeader";
 
 export default function ProductPage() {
   return (
     <main className="flex-1">
+      <LandingHeader/>
       <div className="container px-4 md:px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
           <div>
