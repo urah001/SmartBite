@@ -17,8 +17,8 @@ const LandingHeader = () => {
     <header className="flex justify-between w-full sticky top-0 z-50 bg-transparent ">
       <div className="border p-1.5">
         <Link href="/" className="ml-4 md:ml-0 flex items-center gap-2">
-          <Apple className="h-6 w-6" />
-          <span className="font-bold text-xl">SmartBite</span>
+          <Apple className="h-6 w-6 text-amber-400" />
+          <span className="font-bold text-amber-300 text-xl">SmartBite</span>
         </Link>
       </div>
       <nav className="border p-1.5 font-bold flex w-[fix] space-x-4 justify-evenly ">
@@ -28,7 +28,7 @@ const LandingHeader = () => {
           <Link
             key={route.href}
             href={route.href}
-            className={`transition-colors hover:text-primary  hover:border-b-4 ${
+            className={`transition-colors hover:text-yellow-200  hover:border-b-4 ${
               pathname === route.href
                 ? "text-primary font-medium"
                 : "text-muted-foreground"

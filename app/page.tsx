@@ -13,9 +13,9 @@ export default function Home() {
       <div className="container px-4 md:px-6 flex flex-col">
         <div className="relative h-screen w-full flex flex-col justify-start items-start text-white">
           {/* Hero Text */}
-          <div className="absolute top-20 left-6 md:left-12 text-left max-w-2xl">
+          <div className="absolute top-20 left-6 md:left-12 text-left max-w-2xl bg-black rounded-r-full">
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-              Healthy & Delicious <br />
+              Healthy  <br />
               Meals at Your{" "}
               <span className="text-yellow-400">School Canteen</span>
             </h1>
@@ -24,6 +24,7 @@ export default function Home() {
               students find the best meals based on their dietary needs. Get
               personalized recommendations for a healthier lifestyle!
             </p>
+            {/*  */}
             <button className="mt-6 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full text-lg shadow-lg cursor-pointer">
               Explore Meals
             </button>
@@ -43,7 +44,7 @@ export default function Home() {
 // Food Card Component
 function FoodCard() {
   return (
-    <div className="border rounded-2xl w-[280px] flex items-center p-3 gap-3 bg-white shadow-lg">
+    <div className="border rounded-2xl w-[280px] flex items-center p-3 gap-3 bg-white shadow-lg mt-7">
       {/* Image */}
       <div className="w-16 h-16">
         <Image
