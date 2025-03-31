@@ -1,13 +1,13 @@
 // Import dependencies
-import LandingHeader from "@/components/ui/landingHeader";
+//import LandingHeader from "@/components/ui/landingHeader";
 import { Star } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
+  
   return (
-    <main className="min-h-screen bg-[url('/student.jpg')] bg-cover bg-center bg-no-repeat">
+    <main className="min-h-screen ">
       {/* Landing Header */}
-      <LandingHeader />
 
       {/* Hero Section */}
       <div className="container px-4 md:px-6 flex flex-col">
@@ -15,7 +15,7 @@ export default function Home() {
           {/* Hero Text */}
           <div className="absolute top-20 left-6 md:left-12 text-left max-w-2xl bg-black rounded-r-full">
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
-              Healthy  <br />
+              Healthy <br />
               Meals at Your{" "}
               <span className="text-yellow-400">School Canteen</span>
             </h1>
