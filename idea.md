@@ -16,6 +16,7 @@ add a mock up profile page
 remove the cart icon
 find like a booked icon
 change the apple icon to food
+find a pic to copy for the pages    
 
 1. ### **Service Rendering Jobs in Nigeria 🇳🇬**
    **1. Home & Domestic Services 🏡**
